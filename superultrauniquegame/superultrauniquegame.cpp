@@ -7,4 +7,4 @@ int main()
 {
     std::cout << "rdyAHRSBhrabs";
 }
-\
+
