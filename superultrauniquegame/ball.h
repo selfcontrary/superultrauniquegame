@@ -13,4 +13,24 @@ private:
     DirectionEnum ball_direction;
 public:
     BallClass(int posX, int posY);
+
+
+    void Reset();
+
+
+    void ChangeDirection(DirectionEnum dir);
+
+
+    void RandomDirection();
+
+
+    void Move();
+
+
+    void PrintBallCoordinates();
+
+
+    int GetX();
+    int GetY();
+    DirectionEnum GetDirection();
 };
