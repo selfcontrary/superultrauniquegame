@@ -1,5 +1,9 @@
 #pragma once
 #include <iostream>
+#include <conio.h>
+#include <time.h>
+#include "ball.h"
+#include "paddle.h"
 using namespace std;
 class GameManagerClass {
 

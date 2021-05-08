@@ -2,35 +2,26 @@
 #include <iostream>
 #include <conio.h>
 #include <time.h>
-#include "paddle.h"
-using namespace std;
+#include "ball.h"
 
-enum DirectionEnum { STOP = 0, LEFT = 1, UPLEFT = 2, DOWNLEFT = 3, RIGHT = 4, UPRIGHT = 5, DOWNRIGHT = 6 };
-class BallClass {
+using namespace std;
+class PaddleClass {
 
 private:
-    int x, y, original_X, original_Y;
-    DirectionEnum ball_direction;
+    int x, y, originalX, originalY;
+
 public:
-    BallClass(int posX, int posY);
+    PaddleClass(int posX, int posY);
 
 
     void Reset();
 
 
-    void ChangeDirection(DirectionEnum dir);
-
-
-    void RandomDirection();
-
-
-    void Move();
-
-
-    void PrintBallCoordinates();
-
-
-    int GetX();
+    int getX();
     int GetY();
-    DirectionEnum GetDirection();
+    void MoveUP();
+    void MoveDOWN();
+
+    void PrintPaddleCoordinates();
+
 };
