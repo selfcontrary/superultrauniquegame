@@ -1,3 +1,4 @@
+
 #include "gamemanager.h"
 using namespace std;
 
@@ -108,4 +109,36 @@ void GameManagerClass::Draw()
     cout << endl << endl;
     cout << "\tPlayer 1:\t\t\t\tPlayer 2: " << endl << "\t" << score_1 << "\t\t\t\t\t" << score_2;
 
+}
+
+void GameManagerClass::Input()
+{
+    ball->Move();
+
+    int player1_Y = player1->GetY();
+
+    int player2_Y = player2->GetY();
+
+    if (_kbhit())
+    {
+        char key = _getch();
+
+        if (key == up_1 && player1_Y > 0)
+            player1->MoveUP();
+
+        if (key == down_1 && (player1_Y + 4) < height)
+            player1->MoveDOWN();
+
+        if (key == up_2 && player2_Y > 0)
+            player2->MoveUP();
+
+        if (key == down_2 && (player2_Y + 4) < height)
+            player2->MoveDOWN();
+
+        if (key == 'q')
+            quit = true;
+
+        if (ball->GetDirection() == STOP)
+            ball->RandomDirection();
+    }
 }
