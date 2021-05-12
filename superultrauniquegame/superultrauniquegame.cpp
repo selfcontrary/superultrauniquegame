@@ -1,6 +1,14 @@
 ﻿#include <iostream>
+#include <conio.h>
+#include <time.h>
+#include "gamemanager.h"
+using namespace std;
+
+
+
 int main()
 {
-	//Вова умеет писать
-	// здесь был воВфа
+    GameManagerClass game(50, 15);
+    srand(time(0));
+    game.Run();
 }

@@ -1,5 +1,9 @@
 #pragma once
 #include <iostream>
+#include <conio.h>
+#include <time.h>
+#include "ball.h"
+#include "paddle.h"
 using namespace std;
 class GameManagerClass {
 
@@ -11,9 +15,26 @@ private:
 
     BallClass* ball;
     PaddleClass* player1, * player2;
+
 public:
     GameManagerClass(int w, int h);
 
 
     ~GameManagerClass();
+
+
+    void ScoreUp(PaddleClass* player);
+
+
+    void Draw();
+
+
+    void Input();
+
+
+    void Logic();
+
+
+    void Run();
+
 };
