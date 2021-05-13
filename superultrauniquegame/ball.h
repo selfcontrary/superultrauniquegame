@@ -27,9 +27,6 @@ public:
     void Move();
 
 
-    void PrintBallCoordinates();
-
-
     int GetX();
     int GetY();
     DirectionEnum GetDirection();

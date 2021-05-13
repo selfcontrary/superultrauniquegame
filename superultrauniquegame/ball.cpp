@@ -66,10 +66,6 @@ void BallClass::Move()
     }
 }
 
-void BallClass::PrintBallCoordinates()
-{
-    cout << "Ball [" << x << "," << y << "] " << ball_direction << endl;
-}
 
 int BallClass::GetX() { return x; }
 int BallClass::GetY() { return y; }
