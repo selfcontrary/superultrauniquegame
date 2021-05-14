@@ -56,7 +56,7 @@ GameManagerClass::~GameManagerClass()
         cout << endl << endl << "\t";
 
         for (int i = 0;i < width + 2;i++)
-            cout << "\xB0";
+            cout << "%";
 
         cout << endl;
 
@@ -66,36 +66,36 @@ GameManagerClass::~GameManagerClass()
             for (int j = 0;j < width;j++)
             {
                 if (j == 0)
-                    cout << "\xB0";
+                    cout << "%";
 
                 if (ballX == j && ballY == i)
                     cout << "O";
 
                 
                 else if (player1_X == j && player1_Y == i)
-                    cout << "\xDB";
+                    cout << "8";
                 else if (player1_X == j && player1_Y + 1 == i)
-                    cout << "\xDB";
+                    cout << "8";
                 else if (player1_X == j && player1_Y + 2 == i)
-                    cout << "\xDB";
+                    cout << "8";
                 else if (player1_X == j && player1_Y + 3 == i)
-                    cout << "\xDB";
+                    cout << "8";
 
                 
                 else if (player2_X == j && player2_Y == i)
-                    cout << "\xDB";
+                    cout << "8";
                 else if (player2_X == j && player2_Y + 1 == i)
-                    cout << "\xDB";
+                    cout << "8";
                 else if (player2_X == j && player2_Y + 2 == i)
-                    cout << "\xDB";
+                    cout << "8";
                 else if (player2_X == j && player2_Y + 3 == i)
-                    cout << "\xDB";
+                    cout << "8";
 
                 else
                     cout << " ";
 
                 if (j == width - 1)
-                    cout << "\xB0";
+                    cout << "%";
 
             }
             cout << endl;
@@ -104,7 +104,7 @@ GameManagerClass::~GameManagerClass()
         cout << "\t";
 
         for (int i = 0;i < width + 2;i++)
-            cout << "\xB0";
+            cout << "%";
 
         cout << endl << endl;
         cout << "\tPlayer 1:\t\t\t\tPlayer 2: " << endl << "\t" << score_1 << "\t\t\t\t\t" << score_2;
